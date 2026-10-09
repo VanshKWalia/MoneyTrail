@@ -14,8 +14,6 @@ jobs:
         with:
           channel: stable
           cache: true
-      # Platform folders (android/, ios/, ...) are generated, not committed.
-      - run: flutter create --platforms=android .
       - run: flutter pub get
       - run: flutter analyze
       - run: flutter test
